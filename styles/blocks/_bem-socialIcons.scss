@@ -17,51 +17,52 @@
     box-sizing: border-box;
     border-radius: 0 0 7px 7px;
 
+    &__item {
+        text-decoration: none;
+        &::before{
+            display: inline-block;
+            font-family: Entypo, sans-serif;
+            font-style: normal;
+            color: black;
+            font-size: 33px;
+            line-height: 33px;
+        }
+    
+        &:hover::before {
+            color: #00ACEE;
+        }
 
+        &_linkedin {
+            &::before {
+                content: '\f319';
+            }
+        }
+        
+        &_twitter {
+            &::before {
+                content: '\f30a';
+            }
+        }
+        
+        &_pinterest {
+            &::before {
+                content: '\f313';
+            }
+        }
+        
+        &_googlePlus {
+            &::before {
+                content: '\f310';
+            }
+        }
+        
+        &_rss {
+            &::before {
+                content: '\e73a';
+            }
+        }
+    }
+    
 }
 
-.bem-socialIcons__item {
-    text-decoration: none;
-    &::before{
-        display: inline-block;
-        font-family: Entypo, sans-serif;
-        font-style: normal;
-        color: black;
-        font-size: 33px;
-        line-height: 33px;
-    }
 
-    &:hover::before {
-        color: #00ACEE;
-    }
-}
-
-.bem-socialIcons__item_linkedin {
-    &::before {
-        content: '\f319';
-    }
-}
-
-.bem-socialIcons__item_twitter {
-    &::before {
-        content: '\f30a';
-    }
-}
-
-.bem-socialIcons__item_pinterest {
-    &::before {
-        content: '\f313';
-    }
-}
-
-.bem-socialIcons__item_googlePlus {
-    &::before {
-        content: '\f310';
-    }
-}
-
-.bem-socialIcons__item_rss {
-    &::before {
-        content: '\e73a';
-    }
-}
