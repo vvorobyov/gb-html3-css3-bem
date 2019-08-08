@@ -1,21 +1,22 @@
 .bem-inlineLinksList {
-    font-family:Georgia, serif;
     font-size:12px;
-}
-
-.bem-inlineLinksList__item {
-    color: #81b300;
-
-    &::after {
-        content: '|';
+    
+    &__item {
+        color: #81b300;
+    
+        &::after {
+            content: '|';
+        }
+    
+        &:last-of-type::after {
+            content: '';
+        }
+    }
+    
+    &__link {
+        color: #81b300;
+        text-decoration: none;
     }
 
-    &:last-of-type::after {
-        content: '';
-    }
 }
 
-.bem-inlineLinksList__link {
-    color: #81b300;
-    text-decoration: none;
-}
