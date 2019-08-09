@@ -1,0 +1,27 @@
+.bem-pageContainer {
+    display: grid;
+    grid-template-areas: "header" "content" "footer";
+    grid-template-rows: auto 1fr auto;
+    min-height: 100vh;
+
+    &_1000px {
+        width: 1000px;
+        margin: 0 auto;
+    }
+
+    &__header{
+        grid-area: header;
+    }
+
+    &__content {
+        grid-area: content;
+    }
+    
+    &__footer {
+        grid-area: footer;
+    }
+}
+
+
+
+
