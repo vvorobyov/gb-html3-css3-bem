@@ -10,8 +10,8 @@ body {
 }
 
 
-
-@import 'blocks/bem-container';
+@import 'mixins';
+@import 'blocks/bem-pageContainer';
 @import 'blocks/bem-pageHeader';
 @import 'blocks/bem-pageContent';
 @import 'blocks/bem-pageFooter';
@@ -20,3 +20,8 @@ body {
 @import 'blocks/bem-mainMenu';
 @import 'blocks/bem-siteLogo';
 @import 'blocks/bem-searchForm';
+@import 'blocks/bem-pageHeader';
+@import 'blocks/bem-slider';
+@import 'blocks/bem-partitions';
+@import 'blocks/bem-article';
+@import 'blocks/bem-projectArticle'
