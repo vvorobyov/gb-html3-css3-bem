@@ -1,12 +1,19 @@
 .bem-pageContainer {
     display: grid;
-    grid-template-areas: "header" "content" "footer";
     grid-template-rows: auto 1fr auto;
+    grid-template-areas: 
+        "header" 
+        "content" 
+        "footer";
     min-height: 100vh;
+    padding: 30px 20px;
+    background-color: #1f1f1f;
+    box-sizing: border-box;
 
     &_1000px {
         width: 1000px;
         margin: 0 auto;
+        
     }
 
     &__header{
