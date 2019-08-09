@@ -1,0 +1,47 @@
+.bem-mainMenu {
+    font-family: Georgia, serif;
+    text-transform: uppercase;
+    color: #fff;
+    font-size: 13px;
+    padding: 7px 0;
+    box-sizing: border-box;
+    background-color: #81b300;
+
+    &__listItems {
+        margin: 0;
+        padding: 0;
+        list-style: none;
+
+        &::after {
+            content: '';
+            display: block;
+            clear: both;
+        }
+    }    
+
+    &__item {
+        float: left;
+        margin-right: 10px;
+        &:last-of-type {
+            margin-right: 0;    
+        }
+    }
+
+    &__link {
+        text-decoration: none;
+        color: inherit;
+    
+        &:hover {
+            color: #000;
+        }
+
+        &_active {
+            color: #000;
+        }
+    }
+}
+
+
+
+
+

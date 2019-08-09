@@ -1,0 +1,10 @@
+.bem-partitions {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-column-gap: 27px;
+
+    &_gap20px {
+        grid-column-gap: 20px
+    }
+}
+

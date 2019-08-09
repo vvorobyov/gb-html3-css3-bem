@@ -1,0 +1,63 @@
+.bem-slider {
+    &__slidesList {
+        margin: 0;
+        padding: 0;
+        list-style: none;
+        position: relative;
+        height: 380px;
+        width: 900px;
+        border: 1px solid #e6e6e6;
+        box-sizing: border-box;
+
+    }
+
+    &__item {
+        position: absolute;
+        border: 9px solid #fff;
+        width: 880px;
+        height: 360px;
+    }
+
+    &__image {
+        object-fit: cover;
+        
+    }
+
+    &__indicators {
+        display: flex;
+        width: 156px;
+        justify-content: space-between;
+        margin: 21px auto 0;
+        padding: 0;
+        list-style: none;
+    }
+
+    &__indicator {
+        width: 12px;
+        height: 12px;
+        box-sizing: border-box;
+        border-radius: 50%;
+        border: 2px solid #333;
+        background: #333;
+        margin: 4px 0;
+
+        &_active {
+            background: transparent;
+        }
+    }
+
+    &__leftArrow {
+        display: inline-block;
+        width: 20px;
+        height: 20px;
+        background: url(../images/Left_arrow.png) no-repeat center center, #333;
+        border-radius: 50%;
+    }
+    &__rightArrow {
+        display: inline-block;
+        width: 20px;
+        height: 20px;
+        background: url(../images/Right_arrow.png) no-repeat center center, #333;
+        border-radius: 50%;
+    }
+}

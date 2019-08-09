@@ -1,0 +1,68 @@
+@font-face {
+    font-family: 'entypo';
+    src: url('../fonts/entypo/entypo.eot');
+    src: url('../fonts/entypo/entypo.eot') format('embedded-opentype'),
+         url('../fonts/entypo/entypo.woff') format('woff'),
+         url('../fonts/entypo/entypo.ttf') format('truetype'),
+         url('../fonts/entypo/entypo.svg') format('svg');
+    font-weight: normal;
+    font-style: normal;}
+
+.bem-socialIcons {
+    display: flex;
+    justify-content: space-between;
+    background-color: #81B300;
+    width: 252px;
+    padding: 8px 12px;
+    box-sizing: border-box;
+    border-radius: 0 0 7px 7px;
+
+    &__item {
+        text-decoration: none;
+        &::before{
+            display: inline-block;
+            font-family: Entypo, sans-serif;
+            font-style: normal;
+            color: black;
+            font-size: 33px;
+            line-height: 33px;
+        }
+    
+        &:hover::before {
+            color: #00ACEE;
+        }
+
+        &_linkedin {
+            &::before {
+                content: '\f319';
+            }
+        }
+        
+        &_twitter {
+            &::before {
+                content: '\f30a';
+            }
+        }
+        
+        &_pinterest {
+            &::before {
+                content: '\f313';
+            }
+        }
+        
+        &_googlePlus {
+            &::before {
+                content: '\f310';
+            }
+        }
+        
+        &_rss {
+            &::before {
+                content: '\e73a';
+            }
+        }
+    }
+    
+}
+
+

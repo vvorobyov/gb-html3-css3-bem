@@ -1,0 +1,22 @@
+.bem-pageContent {
+    &__slider {
+        background-color: #f2f2f2;
+        padding: 30px;
+    }
+
+    &__hr {
+        height: 1px;
+        margin: 0;
+        border: none;
+        background-color: #e2e2e2;
+    }
+
+    &__articles {
+        background-color: #fff;
+        padding: 0 30px
+    }
+
+    &__partitions {
+        padding: 50px 0;
+    }
+}

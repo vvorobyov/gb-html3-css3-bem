@@ -1,0 +1,35 @@
+.bem-searchForm {
+    overflow: auto;
+
+    &__input {
+        float: left;
+        width: 282px;
+        border: 0;
+        border-right: 1px solid #ddd;
+        padding: 8px 9px;
+        font-size: 12px;
+        color: #000;
+
+        &:focus {
+            outline: none
+        }
+
+        &::placeholder {
+            color: #7f7f7f;
+        }
+
+    }
+
+    &__button {
+        float: left;
+        border: none;
+        font-size: 12px;
+        width: 66px;
+        text-transform: uppercase;
+        background: #fff;
+        color: #81b300;
+        font-weight: bold;
+        padding: 8px 6px;
+        letter-spacing: 0.6px
+    }
+}
